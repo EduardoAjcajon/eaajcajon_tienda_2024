@@ -1,5 +1,5 @@
-import { cargar_categorias } from "../cargar_categorias/Cargar_categorias.js";
-import { cargarProductos } from "../Cargar_productos/cargar_productos.js"
+import { cargar_categorias } from "./cargar_categorias/Cargar_categorias.js";
+import { cargarProductos } from "./Cargar_productos/cargar_productos.js"
  
 // Selecciona el elemento con el ID 'root'
 const DOM = document.querySelector("#root");
@@ -10,8 +10,6 @@ DOM.innerHTML = `
     <main class="body">
     <section id="div_summery_description"></section>
     <section id="div_product_list">
-    
-    <p>Categorias</p>
     </section>
     </main>
     <footer id="footer"></footer>
