@@ -1,0 +1,60 @@
+#header{
+    background-color: rgb(220, 220, 220);
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(30, 1fr);
+    font-size: 2.5rem;
+}
+.logotipo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 1;
+    grid-column-end: 7;
+
+}
+.logotipo span{
+    font-size: 3.5rem;
+}
+
+.menu{
+    margin: auto;
+    grid-column-start: 7;
+    grid-column-end: 9;
+}
+.carrito_compras{
+    grid-column-end: 29;
+    margin: auto;
+}
+.user{
+    grid-column-start: 29;
+    grid-column-end: 31;
+    margin: auto;
+}
+.div_buscador{
+    display: flex;
+    background-color: red;
+    grid-column-start: 11;
+    grid-column-end: 25;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.buscador{
+    border: none;
+    border-radius: 10px;
+    width: 94%;
+    padding: 1rem;
+}
+.lupa{
+    background-color: yellow;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 360px;
+}

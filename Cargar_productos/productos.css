@@ -1,0 +1,41 @@
+.box_img{
+    margin: auto;
+}
+.box_img img{
+    width: 8rem;
+    height: 8rem;
+}
+.name{
+    padding: 0.2rem;
+    font-size: 1rem;
+}
+.item_product{
+    display: grid;
+    grid-template-rows: 9rem 8.6rem;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+}
+.caja_descri{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 3.5rem 1.3rem 3rem;
+    padding: 0.3rem;
+}
+.price{
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+}
+.buy_btn{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    width: 13rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+}

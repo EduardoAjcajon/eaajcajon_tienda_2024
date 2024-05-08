@@ -1,0 +1,13 @@
+.body{
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 1.5rem;
+}
+#div_product_list{
+    display: grid;
+    grid-template-columns: repeat(7, 15rem);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.5rem;
+}
