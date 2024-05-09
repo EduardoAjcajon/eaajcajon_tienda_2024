@@ -7,7 +7,8 @@
 }
 #div_product_list{
     display: grid;
-    grid-template-columns: repeat(7, 15rem);
+    grid-template-columns: repeat(5, 20rem);
     grid-template-rows: repeat(3, 1fr);
-    gap: 0.5rem;
+    gap: 1.5rem;
+    padding-left: 1.5rem;
 }

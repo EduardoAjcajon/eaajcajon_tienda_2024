@@ -6,18 +6,21 @@ let div = `
             Sígenos...
         </p>
         <div class="imgs_redes">
-            <img src="https://raw.githubusercontent.com/EduardoAjcajon/Img_Tienda/daded0be8533218f6ca1ce525be0b397a8b01d68/facebook-3-logo-svgrepo-com.svg" alt="" class="img">
-            <img src="https://raw.githubusercontent.com/EduardoAjcajon/Img_Tienda/daded0be8533218f6ca1ce525be0b397a8b01d68/icons8-instagram-480.svg" alt="" class="img ">
-            <img src="https://raw.githubusercontent.com/EduardoAjcajon/Img_Tienda/daded0be8533218f6ca1ce525be0b397a8b01d68/icons8-x-384.svg" alt="" class="img ">
-            <img src="https://raw.githubusercontent.com/EduardoAjcajon/Img_Tienda/daded0be8533218f6ca1ce525be0b397a8b01d68/youtube-168-svgrepo-com.svg" alt="" class="img ">
+            <img src="https://raw.githubusercontent.com/EduardoAjcajon/Img_Tienda/0a27608117ae4782255a086b8f97f46f0be09c1d/facebook-svgrepo-com.svg" alt="" class="img">
+            <img src="https://raw.githubusercontent.com/EduardoAjcajon/Img_Tienda/0a27608117ae4782255a086b8f97f46f0be09c1d/instagram-svgrepo-com.svg" alt="" class="img ">
+            <img src="https://raw.githubusercontent.com/EduardoAjcajon/Img_Tienda/0a27608117ae4782255a086b8f97f46f0be09c1d/twitter-svgrepo-com.svg" alt="" class="img ">
+            <img src="https://raw.githubusercontent.com/EduardoAjcajon/Img_Tienda/0a27608117ae4782255a086b8f97f46f0be09c1d/youtube-svgrepo-com.svg" alt="" class="img ">
         </div>
     </div>
-    <div class="abajo_foo">
-        <div class="logotipo">
+    <div class="abajo_footer">
+        <div class="logotipo_foter">
             <span class="material-symbols-outlined logo"> shopping_bag </span>
-            <p class="name_tienda"> ByteVariedades </p>
+            <p class="name_tienda_footer"> ByteVariedades </p>
         </div>
         <div class="contactos">
+            <p class="contacto_text">
+                Contacto
+            </p>
             <p class="correo">
                 eaajcajon@scl.edu.gt
             </p>

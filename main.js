@@ -8,9 +8,8 @@ const DOM = document.querySelector("#root");
 DOM.innerHTML = `
     <header id="header"></header>
     <main class="body">
-    <section id="div_summery_description"></section>
-    <section id="div_product_list">
-    </section>
+        <section id="div_summery_description"></section>
+        <section id="div_product_list"></section>
     </main>
     <footer id="footer"></footer>
 `;
