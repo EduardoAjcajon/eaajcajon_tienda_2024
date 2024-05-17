@@ -45,4 +45,11 @@
     border-radius: 0.5rem;
     color: white;
     font-weight: bold;
+    cursor: pointer;
+}
+#div_product_list{
+    grid-row-start: 1;
+    grid-row-end: 5;
+    grid-column-start: 2;
+
 }

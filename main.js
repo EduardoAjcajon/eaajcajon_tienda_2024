@@ -1,5 +1,7 @@
 import { cargar_categorias } from "./cargar_categorias/Cargar_categorias.js";
 import { cargarProductos } from "./Cargar_productos/cargar_productos.js"
+import { cargar_header } from "./cargar_header/header.js";
+import { cargarFooter } from "./cargar_footer/footer.js";
  
 // Selecciona el elemento con el ID 'root'
 const DOM = document.querySelector("#root");
@@ -8,11 +10,15 @@ const DOM = document.querySelector("#root");
 DOM.innerHTML = `
     <header id="header"></header>
     <main class="body">
+        <p class="categoria_txt">
+            Categorias
+        </p>
         <section id="div_summery_description"></section>
         <section id="div_product_list"></section>
     </main>
     <footer id="footer"></footer>
 `;
+
 
 // Función para cargar categorías y productos
 async function cargarCategoriasYProductos() {
@@ -31,5 +37,8 @@ async function cargarCategoriasYProductos() {
     }
 }
 
+
 // Llamar a la función para cargar categorías y productos
 cargarCategoriasYProductos();
+cargar_header();
+cargarFooter();

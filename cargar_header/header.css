@@ -27,11 +27,13 @@
 .carrito_compras{
     grid-column-end: 29;
     margin: auto;
+    cursor: pointer;
 }
 .user{
     grid-column-start: 29;
     grid-column-end: 31;
     margin: auto;
+    cursor: pointer;
 }
 .div_buscador{
     display: flex;

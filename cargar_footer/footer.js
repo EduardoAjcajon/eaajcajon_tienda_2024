@@ -1,6 +1,7 @@
-let div_footer = document.querySelector("#footer");
+function cargarFooter() {
+    let div_footer = document.querySelector("#footer");
 
-let div = `
+div_footer.innerHTML= `
     <div class="arriba_footer">
         <p class="sigenos">
             Sígenos...
@@ -35,6 +36,7 @@ let div = `
             <p class="categorias_footer">Women's clothing</p>
         </div>
     </div>
-`
+`;
+}
 
-div_footer.innerHTML = div;
+export { cargarFooter }
