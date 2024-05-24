@@ -17,8 +17,18 @@ DOM.innerHTML = `
         <section id="div_product_list"></section>
     </main>
     <footer id="footer"></footer>
-`;
 
+    <!-- Modal -->
+    <div id="carritoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tu Carrito de Compras</h2>
+            <div id="carritoItems">
+                
+            </div>
+        </div>
+    </div>
+`;
 
 // Función para cargar categorías y productos
 async function cargarCategoriasYProductos() {
@@ -36,7 +46,6 @@ async function cargarCategoriasYProductos() {
         console.error("Error al cargar categorías y productos:", error);
     }
 }
-
 
 // Llamar a la función para cargar categorías y productos
 cargarCategoriasYProductos();

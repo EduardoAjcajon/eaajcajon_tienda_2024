@@ -1,6 +1,6 @@
-import { cargarCarrito } from "./cargar_carrito/cargar_carrito.js";
+import { cargarCarrito, inicializarCarritoModal } from "./cargar_carrito/cargar_carrito.js";
 
-function cargar_header (){
+function cargar_header() {
     let div_header = document.querySelector("#header");
 
     // Modificar el contenido del header
@@ -20,10 +20,11 @@ function cargar_header (){
         </div>
         <span class="material-symbols-outlined carrito_compras"> shopping_cart </span>
         <span class="material-symbols-outlined user" > account_circle </span>
-
     `;
     div_header.innerHTML = parte_ariba;
-    document.querySelector(".carrito_compras").addEventListener("click", cargarCarrito)
-};
+
+    cargarCarrito();
+    inicializarCarritoModal();
+}
 
 export { cargar_header };
