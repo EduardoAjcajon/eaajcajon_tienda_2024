@@ -1,4 +1,4 @@
-import { cargar_categorias } from "./cargar_categorias/Cargar_categorias.js";
+import { Cargar_categorias } from "./cargar_categorias/Cargar_categorias.js";
 import { cargarProductos } from "./Cargar_productos/cargar_productos.js"
 import { cargar_header } from "./cargar_header/header.js";
 import { cargarFooter } from "./cargar_footer/footer.js";
@@ -18,7 +18,6 @@ DOM.innerHTML = `
     </main>
     <footer id="footer"></footer>
 
-    <!-- Modal -->
     <div id="carritoModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -41,7 +40,7 @@ async function cargarCategoriasYProductos() {
         cargarProductos(data);
 
         // Llamar a la función para cargar categorías
-        cargar_categorias();
+        Cargar_categorias();
     } catch (error) {
         console.error("Error al cargar categorías y productos:", error);
     }

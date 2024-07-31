@@ -1,31 +1,23 @@
 async function cargarCarrito() {
     try {
-        let respuesta = await fetch('https://fakestoreapi.com/products?limit=2');
-        let datos = await respuesta.json();
-
-        // Limpiar el contenido actual de carritoItems
-        let carritoItems = document.getElementById("carritoItems");
+        const respuesta = await fetch('https://fakestoreapi.com/products?limit=2');
+        const datos = await respuesta.json();
+        const carritoItems = document.getElementById("carritoItems");
         carritoItems.innerHTML = '';    
 
-        // Crear un div por cada item y añadirlo a carritoItems
         datos.forEach(item => {
-            let itemDiv = document.createElement("div");
-            itemDiv.className = "carrito-item";
-
-            // Tomar solo las primeras cinco palabras del título para el texto corto
             const shortText = item.title.split(' ').slice(0, 5).join(' ');
-
-            // Usar plantillas literales para el contenido del div
-            itemDiv.innerHTML = `
-                <div class="box_img">
-                    <img src="${item.image}" alt="${shortText}">
-                </div>
-                <div class="caja_descri">
-                    <span class="name">${shortText}</span>
-                    <span class="price">Q${item.price}</span>
+            carritoItems.innerHTML += `
+                <div class="carrito-item">
+                    <div class="box_img">
+                        <img src="${item.image}" alt="${shortText}">
+                    </div>
+                    <div class="caja_descri">
+                        <span class="name">${shortText}</span>
+                        <span class="price">Q${item.price}</span>
+                    </div>
                 </div>
             `;
-            carritoItems.appendChild(itemDiv);
         });
 
         console.log("Datos cargados correctamente en el carrito");
@@ -35,35 +27,26 @@ async function cargarCarrito() {
 }
 
 function inicializarCarritoModal() {
-    // Añadir el HTML del modal al body
     document.body.insertAdjacentHTML('beforeend', `
-        <!-- Modal -->
         <div id="carritoModal" class="modal">
             <div class="modal-content">
-                <span class="close">&times;</span>
+                <span class="close" id="closeCarrito">&times;</span>
                 <h2>Tu Carrito de Compras</h2>
                 <div id="carritoItems"></div>
             </div>
         </div>
     `);
 
-    // Obtener elementos del modal
-    let modal = document.getElementById("carritoModal");
-    let span = document.getElementsByClassName("close")[0];
+    const modal = document.getElementById("carritoModal");
+    const closeCarrito = document.getElementById("closeCarrito");
 
-    // Abrir el modal al hacer clic en el icono del carrito
-    document.querySelector(".carrito_compras").addEventListener("click", function() {
-        cargarCarrito();  // Cargar el contenido del carrito
+    document.getElementById("carritoIcon").addEventListener("click", () => {
+        cargarCarrito();
         modal.style.display = "block";
     });
 
-    // Cerrar el modal al hacer clic en el botón de cerrar
-    span.addEventListener("click", function() {
-        modal.style.display = "none";
-    });
-
-    // Cerrar el modal al hacer clic fuera del contenido del modal
-    window.addEventListener("click", function(event) {
+    closeCarrito.addEventListener("click", () => modal.style.display = "none");
+    window.addEventListener("click", (event) => {
         if (event.target == modal) {
             modal.style.display = "none";
         }

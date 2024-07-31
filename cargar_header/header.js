@@ -18,8 +18,8 @@ function cargar_header() {
                 </span>
             </div>
         </div>
-        <span class="material-symbols-outlined carrito_compras"> shopping_cart </span>
-        <span class="material-symbols-outlined user" > account_circle </span>
+        <span class="material-symbols-outlined carrito_compras" id="carritoIcon"> shopping_cart </span>
+        <span class="material-symbols-outlined user" id="userIcon"> account_circle </span>
     `;
     div_header.innerHTML = parte_ariba;
 
